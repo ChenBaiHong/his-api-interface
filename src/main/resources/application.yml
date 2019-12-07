@@ -1,0 +1,11 @@
+server:
+  port: 8089
+
+#map 结构， packageHis:方铭封装his接口； hdcHis：预约详情的等待人数接口（原生his的）；oHis：评价医院查询患者信息接口（原生his）
+webService: "{
+  'packageHis':{
+          'wsdlUrl': 'http://129.158.120.94:8082/iHospitalWebService/services/iHospitalWebService?wsdl' ,
+          'userId': 'IHOSPITAL/I001' ,
+          'transactionType': '1' },
+  'hdcHis': { 'wsdlUrl': 'http://129.158.119.118:1607/services/WSHdcInterface?wsdl' },
+  'oHis': { 'wsdlUrl': 'http://129.158.119.118:1506/services/WSInterface?wsdl' } }"
